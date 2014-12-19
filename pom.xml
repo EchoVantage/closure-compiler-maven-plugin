@@ -1,16 +1,22 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.echovantage</groupId>
 	<artifactId>closure-compiler-maven-plugin</artifactId>
 	<packaging>maven-plugin</packaging>
-	<version>1.0-SNAPSHOT</version>
+	<version>1.1-SNAPSHOT</version>
 	<name>closure-compiler-maven-plugin Maven Mojo</name>
 	<url>https://github.com/EchoVantage/closure-compiler-maven-plugin</url>
 	
 	<properties>
 		<nexus.url>http://mvn.echo-v.net</nexus.url>
 	</properties>
+
+	<scm>
+		<url>git@github.com:EchoVantage/closure-compiler-maven-plugin.git</url>
+		<connection>scm:git:${project.scm.url}</connection>
+		<developerConnection>scm:git:${project.scm.url}</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
 	
 	<dependencies>
 		<dependency>
